@@ -1,0 +1,40 @@
+html {
+  background-color: #02010a;
+}
+
+.contenidoHeader {
+  background-color: #5b7989;
+  border-radius: 10px;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Dancing Script";
+  color: white;
+  text-shadow: 2px 2px #02010a;
+}
+
+@media (max-width:899px) {
+  .contenidoHeader {
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  a {
+    font-size: 1.0em;
+  }
+}
+
+@media (min-width:900px) {
+  .contenidoHeader {
+    margin: 0 auto;
+    max-width: 900px;
+  }
+}
