@@ -9,8 +9,12 @@ html {
   border-top-right-radius: 10px;
 }
 
-#contenidoBody1 {
-  display: block;
+.contenidoFooter {
+  background-color: #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: black;
+  text-align: left; 
 }
 
 a {
@@ -34,14 +38,50 @@ h1 {
   }
 
   .contenidoBody1 {
-    max-width: 900px;
     width: 100%;
     background-color: #82c3a6;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenidoBody2 {
+    width: 100%;
+    background-color: #d5c75f;
+    border: 1px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenidoFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   #fotografia {
     max-width: 96%;
-    margin: 2%;
+    margin: 10%;
+  }
+
+  #paisaje {
+    max-width: 96%;
+    margin: 10%;
+  }
+
+  #paisaje:hover {
+    transform: rotate(10deg);
+    box-shadow: 2px 2px #82c3a6;
+  }
+
+
+  #retrato {
+    max-width: 96%;
+    margin: 10%;
+  }
+
+  #retrato:hover {
+    transform: translate(20px, -5px);
+    box-shadow: 2px 2px #82c3a6;
   }
 
   h1 {
