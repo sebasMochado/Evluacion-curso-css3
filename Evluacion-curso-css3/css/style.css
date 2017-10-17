@@ -4,7 +4,22 @@ html {
 
 .contenidoHeader {
   background-color: #5b7989;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.contenidoBody1 {
+  background-color: #82c3a6;
+}
+
+#contenidoBody1 {
+  width: 90%;
+  height: 90%;
+
+}
+
+.contenidoBody2 {
+
 }
 
 a {
@@ -27,12 +42,22 @@ h1 {
     text-align: center;
   }
 
+  .contenidoBody1 {
+    display: block;
+    width: 100%;
+  }
+
+  #fotografia {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+
   h1 {
     font-size: 1.6em;
   }
 
   a {
-    margin-bottom: 1.0em;
     font-size: 1.0em;
   }
 }
