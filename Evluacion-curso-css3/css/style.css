@@ -1,5 +1,6 @@
 html {
   background-color: #02010a;
+  font-family: 'Dancing Script';
 }
 
 .contenidoHeader {
@@ -8,18 +9,8 @@ html {
   border-top-right-radius: 10px;
 }
 
-.contenidoBody1 {
-  background-color: #82c3a6;
-}
-
 #contenidoBody1 {
-  width: 90%;
-  height: 90%;
-
-}
-
-.contenidoBody2 {
-
+  display: block;
 }
 
 a {
@@ -43,14 +34,14 @@ h1 {
   }
 
   .contenidoBody1 {
-    display: block;
+    max-width: 900px;
     width: 100%;
+    background-color: #82c3a6;
   }
 
   #fotografia {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
+    max-width: 96%;
+    margin: 2%;
   }
 
   h1 {
