@@ -5,6 +5,10 @@ html {
 
 footer {
   background-color: #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .contenidoHeader {
@@ -19,6 +23,11 @@ footer {
   border-bottom-right-radius: 10px;
   color: black;
   text-align: left;
+}
+
+.redes {
+  height: 10%;
+  width: 10%;
 }
 
 img {
@@ -108,7 +117,7 @@ h1 {
   }
 
   .contenidoBody1 {
-    max-width: 900px;    
+    max-width: 900px;
     margin: 0 auto;
     background-color: #82c3a6;
     display: flex;
@@ -122,6 +131,16 @@ h1 {
     background-color: #d5c75f;
     display: flex;
     flex-direction: row;
+  }
+
+  .contenidoFooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .columnaFooter {
+    padding: 4%
   }
 
   #fotografia {
@@ -153,5 +172,9 @@ h1 {
     position: relative;
     top: -50px;
     left: 700px;
+  }
+
+  p {
+    font-size: 50%;
   }
 }
