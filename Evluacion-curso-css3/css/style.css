@@ -30,6 +30,21 @@ footer {
   width: 10%;
 }
 
+#paisaje1-1 {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#paisaje1-2, #paisaje1-4, #paisaje1-6 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#paisaje1-3 {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
 img {
   box-shadow: 2px 2px #02010a;
 }
@@ -38,14 +53,26 @@ a {
   color: white;
 }
 
-a:active {
-  text-decoration: none;
+a:visited, a:active {
+  text-decoration:none;
 }
 
 h1 {
   font-family: "Dancing Script";
   color: white;
   text-shadow: 2px 2px #02010a;
+}
+
+@-webkit-keyframes animacion {
+  0% {
+    margin-top: 150%
+  }
+  60% {
+    margin-top: -5%
+  }
+  100% {
+    margin-top: 0%
+  }
 }
 
 @media (max-width:899px) {
@@ -66,6 +93,18 @@ h1 {
     background-color: #d5c75f;
     display: flex;
     flex-direction: column;
+  }
+
+  .contenidoBody3 {
+    width: 100%;
+    background-color: #d5c75f;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paisaje1 {
+    max-width: 96%;
+    margin: 10%
   }
 
   .contenidoFooter {
@@ -100,12 +139,21 @@ h1 {
     box-shadow: 2px 2px #82c3a6;
   }
 
+  header {
+    animation: animacion 2s;
+  }
+
   h1 {
     font-size: 1.6em;
   }
 
   a {
     font-size: 1.0em;
+  }
+
+  a:active {
+    text-decoration: none;
+    color: white;
   }
 
 }
@@ -131,6 +179,22 @@ h1 {
     background-color: #d5c75f;
     display: flex;
     flex-direction: row;
+  }
+
+  .contenidoBody3 {
+    max-width: 900px;
+    max-height: 600px;
+    margin: 0 auto;
+    background-color: #d5c75f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .paisaje1 {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 5%;
   }
 
   .contenidoFooter {
@@ -168,10 +232,19 @@ h1 {
     box-shadow: 2px 2px #82c3a6;
   }
 
+  header {
+    animation: animacion 2s;
+  }
+
   a {
     position: relative;
     top: -50px;
     left: 700px;
+  }
+
+  a:active {
+    text-decoration: none;
+    color: white;
   }
 
   p {
